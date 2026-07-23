@@ -1,0 +1,47 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/* on Atlas Card hosts
+notes: >-
+  Only the OIDC discovery document on the app host returns a genuine document; it
+  is a minimal, non-standard OIDC config exposing just an authorization_endpoint.
+  The security.txt / oauth-authorization-server / api-catalog / ai-plugin.json
+  paths on app.atlascard.com return the SPA HTML shell (soft-200, not real
+  documents) and are recorded as not-present. The apex host returns 404 for all
+  probed paths. Atlas Card is an invite-only consumer charge-card product with no
+  public developer API surface.
+hosts:
+- host: https://atlascard.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://app.atlascard.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: atlascard-openid-configuration.json
+    content_type: application/json
+    note: minimal OIDC discovery, exposes authorization_endpoint only
+  - path: /.well-known/security.txt
+    status: 200
+    present: false
+    note: soft-200, returns SPA HTML shell, not a real RFC 9116 security.txt
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    present: false
+    note: soft-200, returns SPA HTML shell
+  - path: /.well-known/api-catalog
+    status: 200
+    present: false
+    note: soft-200, returns SPA HTML shell
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    present: false
+    note: soft-200, returns SPA HTML shell

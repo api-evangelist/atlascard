@@ -1,7 +1,29 @@
 aid: atlascard
-name: Atlascard
-description: Atlascard is a company surfaced as a portfolio company of kindred-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Atlas Card
+description: >-
+  Atlas is a technology company (not a bank) that offers an invite-only luxury
+  lifestyle membership built around a premium metal charge card, issued by Lead
+  Bank. Membership pairs a CNC-milled steel Atlas Card with no preset spending
+  limit and a concierge-driven mobile app that delivers curated restaurant
+  reservations, luxury hotel bookings, access to sold-out concerts and sporting
+  events, points-based travel rewards, and thousands of dollars in annual travel
+  and lifestyle credits. Atlas Card is a consumer fintech product with a full
+  monthly-payment charge structure and an annual membership fee; it does not
+  publish a public developer API. Added to the API Evangelist network as a
+  portfolio company of Kindred Ventures and enriched with the identity,
+  well-known discovery, and domain-security surface it exposes publicly.
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://assets.atlascard.com/images/atlas-social-image.jpg
 url: https://raw.githubusercontent.com/api-evangelist/atlascard/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,18 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Fintech
+- Financial Services
+- Credit Cards
+- Charge Card
+- Payments
+- Rewards
+- Concierge
+- Luxury
+- Consumer Finance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +54,22 @@ maintainers:
 common:
 - type: Website
   url: https://atlascard.com/
+- type: Login
+  url: https://app.atlascard.com/
+- type: TermsOfService
+  url: https://atlascard.com/legal/terms/
+- type: PrivacyPolicy
+  url: https://atlascard.com/legal/privacy/
+- type: Careers
+  url: https://jobs.ashbyhq.com/atlas
+- type: WellKnown
+  url: well-known/atlascard-well-known.yml
+- type: DomainSecurity
+  url: security/atlascard-domain-security.yml
+- type: LLMsTxt
+  url: llms/atlascard-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

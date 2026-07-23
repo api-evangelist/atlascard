@@ -1,0 +1,19 @@
+# Atlas Card
+
+> Atlas is a technology company (not a bank) that offers an invite-only luxury lifestyle membership built around a premium steel charge card. Atlas Card is issued by Lead Bank. Membership bundles a CNC-milled metal charge card with no preset spending limit, a concierge-driven mobile app, curated dining reservations, luxury hotel bookings, sold-out event access, points-based rewards, and thousands of dollars in annual travel and lifestyle credits.
+
+This is a company profile in the API Evangelist network. Atlas Card publishes no public developer API; the only machine-discoverable surface is a minimal OIDC authorization endpoint used by its own consumer app.
+
+## Company
+- [Atlas Card home](https://atlascard.com/): Product overview, membership, and benefits.
+- [Atlas Card app / sign in](https://app.atlascard.com/): Member web app (invite-only account access).
+- [Careers](https://jobs.ashbyhq.com/atlas): Open roles (Ashby).
+
+## Legal
+- [Terms of Use](https://atlascard.com/legal/terms/): Card and membership terms.
+- [Privacy Policy](https://atlascard.com/legal/privacy/): Member privacy policy.
+- [Rewards & Benefits Terms](https://atlascard.com/legal/rewards-terms): Rewards program terms.
+- [Statement Disclosure](https://atlascard.com/legal/statement-disclosure): Statement and billing disclosures.
+
+## Discovery
+- [OIDC discovery](https://app.atlascard.com/.well-known/openid-configuration): Minimal OpenID configuration (authorization_endpoint only).
