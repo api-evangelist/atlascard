@@ -12,6 +12,17 @@ description: >-
   publish a public developer API. Added to the API Evangelist network as a
   portfolio company of Kindred Ventures and enriched with the identity,
   well-known discovery, and domain-security surface it exposes publicly.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: approval
