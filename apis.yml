@@ -48,7 +48,7 @@ modified: '2026-07-18'
 tags:
 - Company
 - Fintech
-- Financial-Services
+- Financial Services
 - Credit Cards
 - Charge Card
 - Payments
@@ -67,6 +67,7 @@ tags_raw:
 - Concierge
 - Luxury
 - Consumer Finance
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
